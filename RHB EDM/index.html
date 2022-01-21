@@ -89,7 +89,7 @@
         }
 
         .two-columns.last {
-            padding: 35px 0;
+            padding: 0px 0;
         }
 
         .two-columns .padding {
@@ -101,6 +101,50 @@
             /* line-height: 20px; */
             text-align: left;
         }
+        .btn-diamond {
+            margin: 6px;
+            font-size: 10px;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background: #EF3E42;
+            color: #fff;
+            text-decoration: none;
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            }
+            .btn-diamond:after {
+            position: absolute;
+            width: 0;
+            height: 0;
+            content: '';
+            background: #adac9c;
+            -webkit-transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+            .btn-diamond:hover {
+            color: #161616;
+            text-decoration: none;
+            }
+            .btn-diamond:hover:after {
+            width: 100%;
+            height: 100%;
+            }
+            .btn-diamond span {
+            position: relative;
+            z-index: 10;
+            -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            }
     </style>
 </head>
 
@@ -210,6 +254,54 @@
                     </table>
                 </td>
             </tr>
+            <!-- SLIDER -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns last">
+                                <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
+                                                        <p style="font-size: 15px; color: #EF3E42 !important;">Step 1</p>
+                                                        <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">Download and launch your  Mobile Banking App and tap on the DuitNow QR icon.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="display:inline-block;">
+                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
+                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
+                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" style="padding-top: 40px;">
+                                                <tr>
+                                                    <td>
+                                                        <img src="img/pay-qr-step1.png" alt="" width="400px" style=" position:absolute; object-fit: cover; margin-left: -100px;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
             <!-- TWO COLUMN SECTION -->
             <tr>
                 <td>
