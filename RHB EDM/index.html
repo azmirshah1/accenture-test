@@ -166,6 +166,17 @@
             padding-bottom: 12px;
             text-align: left;
             }
+
+            .custom-shape::before{
+                content:'';
+                position: absolute;
+                width: 220px;
+                height: 140px;
+                margin: auto;
+                z-index: -1;
+                border: 5px solid lightgray;
+                left:40px;
+            }
     </style>
 </head>
 
@@ -278,43 +289,45 @@
             <!-- DUITNOW TABLE SECTION -->
             <tr>
                 <td>
-                    <table width="100%" style="padding: 20px;">
+                    <table width="100%" style="padding: 10px;">
                         <tr>
                             <td>
-                                <table style="padding: 20px; background-color: rgb(112, 205, 227,0.3);">
-                                    
-                                    <tr>
-                                        <td>
-                                            <p style="text-align: center; color: #0067B1; font-size: 18px; font-weight: bold;"> Pay with DuitNow QR to gain entries.</p>
-                                            <table style="padding: 20px;">
-                                                <div style="width: 100px; height: 50px; clip-path: polygon(0 0, 100% 0, 89% 93%, 0 86%); background: #FFFFFF;">
-                                                    <tr>
-                                                        <td>
-                                                            <table width="90%" style="border-collapse: collapse;" class="qr-table">
-                                                                <tr style="background-color: #5BC2E7; color: #0067B1;">
-                                                                  <th>Type of transactions </th>
-                                                                  <th>Minimum amount</th>
-                                                                  <th>No of entries</th>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td style="background-color: #0067B1; color: #FFFFFF;">Download and sign up for  Mobile Banking App </td>
-                                                                  <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;" >Not Applicable</td>
-                                                                  <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;" >5 (one-off) </td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td style="background-color: #0067B1; color: #FFFFFF;">DuitNow QR payment</td>
-                                                                  <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;">RM10</td>
-                                                                  <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;">3</td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr></div>
-                                                
-                                            </table>
-
-                                        </td>
-                                    </tr>
-                                </table>
+                                <div class="custom-shape" style="width: 100%; height: 320px; clip-path: polygon(0 14%, 96% 2%, 100% 83%, 0 92%); background: rgb(112, 205, 227,0.3);">
+                                    <table width="100%" style="padding: 20px;">
+                                        <!-- <table width="100%" style="padding: 20px; background-color: rgb(112, 205, 227,0.3);"> -->
+                                            <tr>
+                                                <td>
+                                                    <p style="text-align: center; color: #0067B1; font-size: 18px; font-weight: bold; padding-top: 20px;"> Pay with DuitNow QR to gain entries.</p>
+                                                    <div class="custom-shape" style="width: 100%; height: 180px; clip-path: polygon(0 0, 99% 0, 96% 85%, 0 86%); background: #FFFFFF;">
+                                                        <table style="padding: 20px;">
+                                                            <tr>
+                                                                <td>
+                                                                    <table width="100%" style="border-collapse: collapse; font-size: 12px;" class="qr-table">
+                                                                        <tr style="background-color: #5BC2E7; color: #0067B1;">
+                                                                          <th>Type of transactions </th>
+                                                                          <th>Minimum amount</th>
+                                                                          <th>No of entries</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td style="background-color: #0067B1; color: #FFFFFF;">Download and sign up for  Mobile Banking App </td>
+                                                                          <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;" >Not Applicable</td>
+                                                                          <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;" >5 (one-off) </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td style="background-color: #0067B1; color: #FFFFFF;">DuitNow QR payment</td>
+                                                                          <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;">RM10</td>
+                                                                          <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;">3</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>   
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                </div>
+                                
                             </td>
                         </tr>
                     </table>
