@@ -1,0 +1,508 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHB Electronic Direct Mail marketing (EDM)</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: #cccccc;
+            font-family: 'Lato', sans-serif;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+            ;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #cccccc;
+            padding-bottom: 60px;
+        }
+
+        .main {
+            background-color: #fff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            color: #4a4a4a;
+        }
+
+        .two-columns {
+            text-align: center;
+            font-size: 0;
+        }
+
+        .two-columns .column {
+            width: 100%;
+            max-width: 300px; 
+            /* Isu dengan mobile max-width */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .button {
+            background-color: #0067B1;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .three-columns {
+            text-align: center;
+            font-size: 0;
+            padding: 35px 0 20px;
+        }
+
+        .three-columns .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .three-columns .padding {
+            padding: 15px;
+        }
+
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .two-columns.last {
+            padding: 0px 0;
+        }
+
+        .two-columns .padding {
+            padding: 20px;
+        }
+
+        .two-columns .content {
+            font-size: 15px;
+            /* line-height: 20px; */
+            text-align: left;
+        }
+        .btn-diamond {
+            margin: 6px;
+            font-size: 10px;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background: #EF3E42;
+            color: #fff;
+            text-decoration: none;
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            }
+            .btn-diamond:after {
+            position: absolute;
+            width: 0;
+            height: 0;
+            content: '';
+            background: #adac9c;
+            -webkit-transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+            .btn-diamond:hover {
+            color: #161616;
+            text-decoration: none;
+            }
+            .btn-diamond:hover:after {
+            width: 100%;
+            height: 100%;
+            }
+            .btn-diamond span {
+            position: relative;
+            z-index: 10;
+            -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            }
+
+            .qr-table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+            .qr-table td, .qr-table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            }
+
+            .qr-table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            }
+
+            /* .custom-shape::before{
+                content:'';
+                position: absolute;
+                width: 220px;
+                height: 140px;
+                margin: auto;
+                z-index: -1;
+                border: 5px solid lightgray;
+                left:40px;
+            } */
+    </style>
+</head>
+
+<body>
+
+    <center class="wraper">
+        <table class="main" width="100%">
+            <!-- HEADER - BANNER IMAGE -->
+            <tr>
+                <td>
+                    <a href=""><img src="img/header.png" alt="" width="600" style="max-width: 100%;"></a>
+                </td>
+            </tr>
+            <!-- CAMPAIGN CONTENT -->
+            <tr>
+                <td style="padding: 5px 0 10px;">
+                    <table width="100%">
+                        <tr>
+                            <td style="text-align: center; padding: 15px;">
+                                <p style="font-size: 18px; font-weight: bold; color: #0067B1;">New ways of spending in the new norm.</p>
+                                <p style="font-size: 13px; line-height: 23px; padding: 5px 0 15px;"> Enjoy great rewards just by using DuitNow QR to make 
+                                    contactless payments! Shop safely when you’re out and about to take part. Make more transactions, gain more entries and 
+                                    increase your chances of winning. Stay Safe and DuitNow QR.</p>
+                                    <p style="font-size: 13px; color: #0067B1; font-weight: bold;">Campaign period: 1 December 2020 – 28 February 2021</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!-- TWO COLUMN SECTION -->
+            <!-- <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns">
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href=""><img src="img/ecommerce.jpg" alt="" width="110px"
+                                                                style="max-width: 110px; border-radius: 55px;"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 10px;">
+                                                        <p style="font-weight: bold; font-size: 17px;">Ecommerce</p>
+                                                        <p>Responsive HTML Email Template Courrse to master email
+                                                            development</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href=""><img src="img/web-design.jpg" alt="" width="110px"
+                                                                style="max-width: 110px; border-radius: 55px;"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 10px;">
+                                                        <p style="font-weight: bold; font-size: 17px;">Web Design</p>
+                                                        <p>Responsive HTML Email Template Courrse to master email
+                                                            development</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr> -->
+            <!-- PRICE SECTION-->
+            <tr>
+                <td>
+                    <table width="100%" style="padding: 10px;">
+                        <tr>
+                            <td>
+                                <div class="custom-shape" style="width: 100%; height: 320px; clip-path: polygon(4% 12%, 98% 18%, 89% 100%, 0% 95%); background: rgb(112, 205, 227,0.3);">
+                                    <table width="100%" style="padding: 20px;">
+                                        <tr>
+                                            <td >
+                                                <p style="text-align: center; color: #0067B1; font-size: 18px; font-weight: bold; padding-top: 20px; padding-bottom: 30px;"> Prizes up for grabs.</p>
+                                                    <table width="47%" style="padding:10px; float: left; font-size: 10px;">
+                                                        <tr>
+                                                            <td style="background-color: white; text-align: center; padding: 5px; height: 110px;">
+                                                                <img src="img/grand-prize-winner.png" alt="" width="200px;" style="margin-top:-40px; margin-bottom: -30px; display: block; margin-left: auto; margin-right: auto; padding-left: 30px;"">
+                                                                <p style="padding: 10px;">For the first 50 winners with the highest accumulated entries during the campaign period.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="47%" style="padding: 10px; display: inline-block; font-size: 10px;">
+                                                        <tr>
+                                                            <td style="background-color: white; text-align: center; padding: 5px; height: 110px;">
+                                                                <img src="img/monthly-winner.png" alt="" width="200px;" style="margin-top:-40px; margin-bottom: -30px; display: block; margin-left: auto; margin-right: auto; padding-left: 30px;">
+                                                                <p style="padding: 10px;">For the first 300 winners with the highest entries per month.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- DUITNOW TABLE SECTION -->
+            <tr>
+                <td>
+                    <table width="100%" style="padding: 10px;">
+                        <tr>
+                            <td>
+                                <div class="custom-shape" style="width: 100%; height: 320px; clip-path: polygon(0 14%, 96% 2%, 100% 83%, 0 92%); background: rgb(112, 205, 227,0.3);">
+                                    <table width="100%" style="padding: 20px;">
+                                        <tr>
+                                            <td>
+                                                <p style="text-align: center; color: #0067B1; font-size: 18px; font-weight: bold; padding-top: 20px;"> Pay with DuitNow QR to gain entries.</p>
+                                                <div class="custom-shape" style="width: 100%; height: 180px; clip-path: polygon(0 0, 99% 0, 96% 85%, 0 86%); background: #FFFFFF;">
+                                                    <table style="padding: 20px;">
+                                                        <tr>
+                                                            <td>
+                                                                <table width="100%" style="border-collapse: collapse; font-size: 12px;" class="qr-table">
+                                                                    <tr style="background-color: #5BC2E7; color: #0067B1;">
+                                                                        <th>Type of transactions </th>
+                                                                        <th>Minimum amount</th>
+                                                                        <th>No of entries</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="background-color: #0067B1; color: #FFFFFF;">Download and sign up for  Mobile Banking App </td>
+                                                                        <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;" >Not Applicable</td>
+                                                                        <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;" >5 (one-off) </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="background-color: #0067B1; color: #FFFFFF;">DuitNow QR payment</td>
+                                                                        <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;">RM10</td>
+                                                                        <td style="background-color: rgb(112, 205, 227,0.3); color: #0067B1;">3</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>   
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- SLIDER -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns last">
+                                <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
+                                                        <p style="font-size: 15px; color: #EF3E42 !important;">Step 1</p>
+                                                        <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">Download and launch your  Mobile Banking App and tap on the DuitNow QR icon.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="display:inline-block;">
+                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
+                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
+                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" style="padding-top: 40px;">
+                                                <tr>
+                                                    <td>
+                                                        <img src="img/pay-qr-step1.png" alt="" width="400px" style=" position:absolute; object-fit: cover; margin-left: -100px;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!-- TWO COLUMN SECTION -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns last">
+                                <table class="column" width="100%" style="background-color: #5BC2E7; color: #fff;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-size: 40px; font-weight: bold;">Banking right</p>
+                                                        <img style="z-index: 1; margin: -50px 0px 0px; object-fit: cover;" src="img/by-you.png" alt="" width="50%">
+                                                        <p style="font-size: 15px;">Do your banking securely and conveniently on mobile.</p>
+                                                        <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">Download the new Mobile Banking App now.</p>
+                                                        <a href="" style="padding: 10px;"><img src="img/appstore-desktop.png" alt="" width="40%" style="object-fit: cover;"></a>
+                                                        <a href="" style="padding: 10px;"><img src="img/playstore-desktop.png" alt=""width="40%" style="object-fit: cover;"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column" width: 40%; style="background-color: #5BC2E7; height: 477px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" style="padding-top: 120px;">
+                                                <tr>
+                                                    <td>
+                                                        <img src="img/phone.png" alt="" width="260px" style="max-width: 300px; z-index:100; position:absolute; object-fit: cover;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!-- TITLE, TEXT & BUTTON -->
+            <tr>
+                <td style="padding: 100px 0 50px;">
+                    <table width="100%">
+                        <tr>
+                            <td style="text-align: center; padding: 15px;">
+                                <p style="font-size: 20px; font-weight: bold; color: #0067B1;">Need more information about DuitNow?
+                                    <br>We are more than happy to help.</p>
+                                <a href="#" class="button"> Find out more</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- TERM & CONDITION -->
+            <tr>
+                <td style="padding: 5px 0px 0px 30px;">
+                    <p style=" font-size: 12px; color: #0667B0;">Term and conditions</p>
+                    <table width="95%" style="background-color: #5BC2E7; color: #fff;">
+                        <tr>
+                            <td style="text-align: left; padding: 0px 30px 7px; line-height: 5px;" >
+                                <p style="font-size: 15px; font-weight: bold;">Get in touch today.</p>
+                                <p style="font-size: 11px;"><strong style="font-weight: bold;"> Visit</strong> any of our branches</p>
+                                <p style="font-size: 11px;"><strong >Call</strong> us at <strong style="font-weight: bold;">03-9206 8118</strong></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="95%">
+                        <tr>
+                            <td style="background-color: #5BC2E7; width: 15%;"> 
+                            </td>
+                            <td style="width: 10%; padding-left: 10px;">
+                                <a href=""><img src="img/perbankan-islam.png" alt=""></a>
+                            </td>
+                            <td style="width: 75%; padding: 0px 5px;">
+                                <p style="font-size: 12px; color: #6F7276;">For avoidance of doubt,  Islamic Bank only promotes and manages promotions in relation to Islamic Bank products and its related proposition only.</p>
+                            </td>
+                        </tr>
+                    </table> 
+                </td>
+            </tr>
+            <!-- FOOTER SECTION -->
+            <tr>
+                <td style="background-color: #fff; color: #6F7276; font-size: 12px; line-height: 20px;">
+                    <table width="100%">
+                        <tr>
+                            <td style="text-align: justify; padding: 20px 20px;">
+                                <p> Current and Savings Account/-i are protected by PIDM up to RM250,000 for each depositor. Investment products are not protected by PIDM.</p>
+                                <p>Terms and Conditions apply. Applicable to selected Current or Savings Account/-i (CASA/-i) customers with new Mobile Banking App 
+                                    (both residents and non-residents) of the Consumer Banking segment only. Grand Prize reward is limited to first fifty (50) winners with the 
+                                    highest accumulated entries during the campaign period and Monthly Prize reward is limited to first three hundred (300) winners with the highest 
+                                    entries per month. Monthly Prize reward winner(s) are entitled one (1) Monthly Prize reward only throughout the Campaign Period. </p>
+                                <p>In the event of a tiebreaker, the eligible participant(s) with higher transaction amount will be selected as the winner. The eligible winner(s) 
+                                    will receive the cashback reward to their CASA/-i that is registered with  Now Internet Banking within the next working day after winners’ announcement 
+                                    has been made. The eligible winner(s) CASA/-i must remain active and valid during the Campaign Period for the purpose of cash prizes fulfilment. 
+                                    In the event CASA/-i is closed due to any reason whatsoever or before end of Campaign Period (which includes at any time during the Campaign Period), 
+                                    the eligible winner(s) shall be disqualified from receiving the Campaign Reward.</p>
+                                <p>The information contained herein is strictly meant to be as a general information and reference for each campaign promotion only. Full terms and conditions apply.</p>
+                                <p>Member of PIDM <br>Bank Berhad 196501000373 (6171-M) | Islamic Bank Berhad 200501003283 (680329-V)</p>
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+    </center>
+
+</body>
+
+</html>
