@@ -117,29 +117,18 @@
             align-items: center;
             width: 20px;
             height: 20px;
-            background: #EF3E42;
+            background: #818A91;
             color: #fff;
             text-decoration: none;
             -webkit-transform: rotate(45deg);
                     transform: rotate(45deg);
             }
-            .btn-diamond:after {
-            position: absolute;
-            width: 0;
-            height: 0;
-            content: '';
-            background: #adac9c;
-            -webkit-transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-            transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+            .active, .btn-diamond:hover, .btn-diamond:focus{
+                background: #EF3E42;
+                color: #fff;
             }
-            .btn-diamond:hover {
-            color: #161616;
-            text-decoration: none;
-            }
-            .btn-diamond:hover:after {
-            width: 100%;
-            height: 100%;
-            }
+            
             .btn-diamond span {
             position: relative;
             z-index: 10;
@@ -163,17 +152,25 @@
             padding-bottom: 12px;
             text-align: left;
             }
+            
+			input { display: none; }
+			/* Make labels look clickable */
+			label { cursor: pointer; }
+			/* Hide slides */
+			.slide { display: none; }
+			/* Show checked slide */
+			#slide1:checked ~ .slide1,
+			#slide2:checked ~ .slide2,
+			#slide3:checked ~ .slide3 {
+				display: block;
+			}
+			/* Make the label look active */
+			#slide1:checked ~ .slide-label1 {
+				background-color: red !important;
+			}
+            
+        
 
-            /* .custom-shape::before{
-                content:'';
-                position: absolute;
-                width: 220px;
-                height: 140px;
-                margin: auto;
-                z-index: -1;
-                border: 5px solid lightgray;
-                left:40px;
-            } */
     </style>
 </head>
 
@@ -203,60 +200,6 @@
                     </table>
                 </td>
             </tr>
-            
-            <!-- TWO COLUMN SECTION -->
-            <!-- <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <td class="two-columns">
-                                <table class="column">
-                                    <tr>
-                                        <td class="padding">
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <a href=""><img src="img/ecommerce.jpg" alt="" width="110px"
-                                                                style="max-width: 110px; border-radius: 55px;"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding: 10px;">
-                                                        <p style="font-weight: bold; font-size: 17px;">Ecommerce</p>
-                                                        <p>Responsive HTML Email Template Courrse to master email
-                                                            development</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column">
-                                    <tr>
-                                        <td class="padding">
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <a href=""><img src="img/web-design.jpg" alt="" width="110px"
-                                                                style="max-width: 110px; border-radius: 55px;"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding: 10px;">
-                                                        <p style="font-weight: bold; font-size: 17px;">Web Design</p>
-                                                        <p>Responsive HTML Email Template Courrse to master email
-                                                            development</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr> -->
             <!-- PRICE SECTION-->
             <tr>
                 <td>
@@ -338,51 +281,341 @@
                     </table>
                 </td>
             </tr>
+            <!-- TEST -->
+            
+            
             <!-- SLIDER -->
             <tr>
-                <td>
-                    <table width="100%">
+                <td >
+                    <!-- Triggers for switching content -->
+                    <input type="radio" name="slides" id="slide1" checked>
+                    <input type="radio" name="slides" id="slide2">
+                    <input type="radio" name="slides" id="slide3">
+
+                    <div class="label-list" style="text-align: center; position: absolute; z-index: 1; padding: 344px 0px 0px 18px;">
+                        <label class="btn-diamond list1 active" for="slide1"> <span style="transform: rotate(-45deg);">1</span></label>
+                        <label class="btn-diamond list2" for="slide2"><span style="transform: rotate(-45deg);">2</span></label>
+                        <label class="btn-diamond list3" for="slide3"><span style="transform: rotate(-45deg);">3</span></label>
+                    </div>
+                    <!-- TEST -->
+                    <!-- Content to be switched -->
+                    <div class="slide slide1" style="background-color: rgb(112, 205, 227,0.1);">
+                        <!-- STEP 1 -->
+                        <table width="100%" class="frame1">
+                            <tr>
+                                <td class="two-columns last">
+                                    <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
+                                                            <p style="font-size: 15px; color: #EF3E42 !important;">Step 1</p>
+                                                            <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">Download and launch your  Mobile Banking App and tap on the DuitNow QR icon.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- <tr>
+                                                        <td style="display:inline-block;">
+                                                            <a for="slide1" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
+                                                            <a for="slide1" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
+                                                            <a for="slide1"style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
+                                                        </td>
+                                                    </tr> -->
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content" style="padding-top: 40px;">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/pay-qr-step1.png" alt="" width="400px" style=" position:absolute; object-fit: cover; margin-left: -100px;">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="slide slide2" style="background-color: rgb(112, 205, 227,0.1);">
+                        <!-- STEP 2 -->
+                        <table width="100%" class="frame2">
+                            <tr>
+                                <td class="two-columns last">
+                                    <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
+                                                            <p style="font-size: 15px; color: #EF3E42 !important;">Step 2</p>
+                                                            <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">Scan merchants’ DuitNow QR followed by keying in the payment amount to proceed. </p>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- <tr>
+                                                        <td style="display:inline-block;">
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
+                                                        </td>
+                                                    </tr> -->
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content" style="padding-top: 40px;">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/pay-qr-step2.png" alt="" width="300px" style=" position:absolute; object-fit: cover; margin-left: -30px;">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="slide slide3" style="background-color: rgb(112, 205, 227,0.1);">
+                        <!-- STEP 3 -->
+                        <table width="100%" class="frame3">
+                            <tr>
+                                <td class="two-columns last">
+                                    <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
+                                                            <p style="font-size: 15px; color: #EF3E42 !important;">Step 3</p>
+                                                            <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">You will receive a notification upon successful transactions.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- <tr>
+                                                        <td style="display:inline-block;">
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
+                                                        </td>
+                                                    </tr> -->
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content" style="padding-top: 40px;">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/pay-qr-step3.png" alt="" width="400px" style=" position:absolute; object-fit: cover; margin-left: -100px;">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- <table>
                         <tr>
-                            <td class="two-columns last">
-                                <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                            <td>
+                                <table class="container" align="center" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;">
                                     <tr>
-                                        <td class="padding">
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
-                                                        <p style="font-size: 15px; color: #EF3E42 !important;">Step 1</p>
-                                                        <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">Download and launch your  Mobile Banking App and tap on the DuitNow QR icon.</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="display:inline-block;">
-                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
-                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
-                                                        <a href="#" style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                        <td style="line-height:20px;height:20px;" height="20">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="text-align: center; vertical-align: top; font-size: 0;">
+                                            <article id="slider">	
+                                                <input checked type="radio" name="slider" id="slide1" style="display:none !important;height:0;width:0;font-size:0;line-height:0;float:left;overflow:hidden;" />
+                                                <input type="radio" name="slider" id="slide2" style="display:none !important;height:0;width:0;font-size:0;line-height:0;float:left;overflow:hidden;"/>
+                                                <input type="radio" name="slider" id="slide3" style="display:none !important;height:0;width:0;font-size:0;line-height:0;float:left;overflow:hidden;" />
+                                                <div id="slides">	
+                                                    <div id="overflow">			
+                                                        <div class="inner">											
+                                                            <article>
+                                                                <a href="https://www.freshly.com/portfolio/greek-yogurt-berries-nuts/" target="_blank" style="text-decoration:none;color:#333333;"><div class="info" style="color:#333333;font-family: Verdana, Geneva, sans-serif;text-align: left;font-size: 14px;line-height:25px;padding:0;text-transform:uppercase;-webkit-text-size-adjust:none;"><h3 style="margin:0;padding:0;font-weight: normal;font-style: normal;font-size:22px;color:#e1431a;">Greek Yogurt<span class="eraseForMobile"> with Berries &amp;&nbsp;Nuts</span></h3>Breakfast</div></a>
+                                                                <a href="https://www.freshly.com/portfolio/greek-yogurt-berries-nuts/" target="_blank" style="text-decoration:none;color:#666666;"><img src="https://assets.bounceexchange.com/assets/uploads/users/741/yqdiu273.jpg" style="display:block;margin:0 auto;border:0;" alt="Highlight 1" /><span class="noWebkit" style="line-height:20px;height:20px;"><br/>&nbsp;<br/></span></a>
+                                                            </article>
+                                                            <article>
+                                                                <a href="https://www.freshly.com/portfolio/freshly-cuban/" target="_blank" style="text-decoration:none;color:#333333;"><div class="info" style="color:#333333;font-family: Verdana, Geneva, sans-serif;text-align: left;font-size: 14px;line-height:25px;padding:0;text-transform:uppercase;-webkit-text-size-adjust:none;"><h3 style="margin:0;padding:0;font-weight: normal;font-style: normal;font-size:22px;color:#e1431a;">Freshly Cuban</h3>Lunch</div></a>
+                                                                <a href="https://www.freshly.com/portfolio/freshly-cuban/" target="_blank" style="text-decoration:none;color:#666666;"><img src="https://assets.bounceexchange.com/assets/uploads/users/741/ZHIEfxgD.jpg" style="display:block;margin:0 auto;border:0;" alt="Highlight 2" /><span class="noWebkit" style="line-height:20px;height:20px;"><br/>&nbsp;<br/></span></a>
+                                                            </article>
+                                                            <article>
+                                                                <a href="https://www.freshly.com/portfolio/coconut-lime-salmon-w-asian-slaw/" target="_blank" style="text-decoration:none;color:#333333;"><div class="info" style="color:#333333;font-family: Verdana, Geneva, sans-serif;text-align: left;font-size: 14px;line-height:25px;padding:0;text-transform:uppercase;-webkit-text-size-adjust:none;"><h3 style="margin:0;padding:0;font-weight: normal;font-style: normal;font-size:22px;color:#e1431a;">Coconut Lime Salmon<span class="eraseForMobile"> w/ Asian&nbsp;Slaw</span></h3>Dinner</div></a>
+                                                                <a href="https://www.freshly.com/portfolio/coconut-lime-salmon-w-asian-slaw/" target="_blank" style="text-decoration:none;color:#666666;"><img src="https://assets.bounceexchange.com/assets/uploads/users/741/VSmTLt25.jpg" style="display:block;margin:0 auto;border:0;" alt="Highlight 3" /><span class="noWebkit" style="line-height:20px;height:20px;"><br/>&nbsp;<br/></span></a>
+                                                            </article>
+                                                            </a>			
+                                                        </div>				
+                                                    </div>		
+                                                </div>	
+                                                <div id="controls">
+                                                    <label for="slide1"></label>
+                                                    <label for="slide2"></label>
+                                                    <label for="slide3"></label>
+                                                </div>
+                                                <div id="active">
+                                                    <label for="slide1"></label>
+                                                    <label for="slide2"></label>
+                                                    <label for="slide3"></label>		
+                                                </div>	
+                                            </article> 			
                                         </td>
                                     </tr>
-                                </table>
-                                <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
-                                    <tr>
-                                        <td class="padding">
-                                            <table class="content" style="padding-top: 40px;">
-                                                <tr>
-                                                    <td>
-                                                        <img src="img/pay-qr-step1.png" alt="" width="400px" style=" position:absolute; object-fit: cover; margin-left: -100px;">
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                                
+                                <tr>
+                                <td style="line-height:40px;height:40px;" height="40">&nbsp;</td>
+                                </tr>
+                                </table>         
                             </td>
                         </tr>
-                    </table>
+                    </table> -->
+                        <!-- STEP 1 -->
+                        <!-- <table width="100%" class="frame1">
+                            <tr>
+                                <td class="two-columns last">
+                                    <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
+                                                            <p style="font-size: 15px; color: #EF3E42 !important;">Step 1</p>
+                                                            <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">Download and launch your  Mobile Banking App and tap on the DuitNow QR icon.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="display:inline-block;">
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content" style="padding-top: 40px;">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/pay-qr-step1.png" alt="" width="400px" style=" position:absolute; object-fit: cover; margin-left: -100px;">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table> -->
+                        <!-- STEP 2 -->
+                        <!-- <table width="100%" class="frame2">
+                            <tr>
+                                <td class="two-columns last">
+                                    <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
+                                                            <p style="font-size: 15px; color: #EF3E42 !important;">Step 2</p>
+                                                            <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">Scan merchants’ DuitNow QR followed by keying in the payment amount to proceed. </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="display:inline-block;">
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content" style="padding-top: 40px;">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/pay-qr-step2.png" alt="" width="300px" style=" position:absolute; object-fit: cover; margin-left: -30px;">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </td>
+                            </tr>
+                        </table> -->
+                        <!-- STEP 3 -->
+                        <!-- <table width="100%" class="frame3">
+                            <tr>
+                                <td class="two-columns last">
+                                    <table class="column" width="100%" style="background-color: rgb(112, 205, 227,0.1); color: #0067B1; min-height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <p style="font-size: 40px; font-weight: bold;">How to pay with DuitNow QR</p>
+                                                            <p style="font-size: 15px; color: #EF3E42 !important;">Step 3</p>
+                                                            <p style="padding-bottom: 15px; font-size: 15px; font-weight: bold; color: black !important;">You will receive a notification upon successful transactions.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="display:inline-block;">
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>1</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>2</span></a>
+                                                            <a href="#" style="font-weight: bold;" class="btn-diamond"><span>3</span></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column" width: 40%; style="background-color: rgb(112, 205, 227,0.1); height: 477px;">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content" style="padding-top: 40px;">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/pay-qr-step3.png" alt="" width="400px" style=" position:absolute; object-fit: cover; margin-left: -100px;">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </td>
+                            </tr>
+                        </table> -->
+                    
                 </td>
             </tr>
             
