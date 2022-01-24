@@ -84,4 +84,14 @@ html {
      }
   }
 
+  @media (max-width: 576px) { 
+      .mobile-hide{
+          display: none;
+      }
+   }
+    
+
+
+  
+
   
