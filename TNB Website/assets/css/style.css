@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.body {
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    line-height: 28px;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* color: #444444;
+    background-color: #FFFFFFFF; */
+}
+
+/* ====================================================
+2. Bootstrap Overwrite
+=====================================================*/
+
+
+
+
+.navbar {
+    padding:0rem;
+    margin-bottom:2rem;
+  }
+  
+  .dropdown .dropdown-menu {
+    border-radius:0;
+   }
+
+   .nav-icon{
+       width: 20px;
+       padding-right: 5px;
+   }
+
+   .nav-icon-followus, .nav-icon-price{
+       width: 22px;
+       padding-right: 5px;
+       object-fit: cover;
+   }
+
+   .notification-bar{
+       background-color: #585858;
+       color: white;
+   }
+
+   .left-notibar{
+       font-size: 12px;
+       font-weight: bold;
+       text-transform: uppercase;
+   }
+
+
+   .left-notibar  ul li {
+       background: none;
+       color: white;
+   }
+
+   .left-notibar  ul li a, .right-notibar  ul li a{
+    text-decoration: none;
+    color: white;
+    }
+
+    .right-notibar{
+        font-size: 12px;
+    }
+
+    .right-notibar ul li.list-group-item  {
+        background: none;
+        color: white;
+    }
+  
+  /* Medium devices (tablets, 768px and up) 
+  The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+      border-radius:0;
+     }
+  }
+
+  @media (max-width: 576px) { 
+      .mobile-hide{
+          display: none;
+      }
+   }
+    
+
+
+  
+
+  
