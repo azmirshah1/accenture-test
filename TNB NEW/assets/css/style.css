@@ -130,9 +130,15 @@ html {
 3. Custom Code
 =====================================================*/
 
+.logo-header{
+  padding-left: 30px; 
+  width: 300px;
+}
+
 .nav-icon{
   width: 20px;
   padding-right: 2px;
+  display: inline-block;
 }
 
 .nav-icon-followus, .nav-icon-price{
@@ -370,6 +376,7 @@ color: white;
   .image-post img {
     width: 100%;
     height: 400px;
+    object-fit: cover;
 }
 
 .container {
@@ -451,9 +458,43 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 }
 
-@media (min-width: 769px) and (max-width: 1400px){
- 
-  
+@media (min-width: 992px) and (max-width: 1500px){
+  .main-nav {
+    /* display: flex;
+    flex-flow: wrap; */
+    display: flex;
+    flex-flow: wrap;
+  } 
+}
+
+@media (max-width:1200px){
+  .search-area {
+    display: none;
+  }
+
+  #second-nav{
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  border-radius:0;
+ }
+
+ .bg-nav1{
+   margin-left: 0px;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: white;
+   margin-top: 12px;
+ }
+}
+
+@media (max-width:992px){
+  .bg-nav2 {
+    display: none;
+  }
 }
 
 
@@ -466,6 +507,8 @@ only screen and (min-device-pixel-ratio: 1.5){
 
    .bg-nav1{
      margin-left: -140px;
+     display: flex;
+     flex-wrap: wrap;
    }
 }
 
@@ -531,6 +574,10 @@ only screen and (min-device-pixel-ratio: 1.5){
 
     .bulletin-card .upper-section p {
       display: grid;
+    }
+
+    .logo-header{
+      width: 100%;
     }
  }
 
