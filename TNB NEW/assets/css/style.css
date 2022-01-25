@@ -268,21 +268,126 @@ color: white;
   .bulletin-card{
     margin: 10px;
     width: 45%;
-    height: 450px;
+    height: 150px;
     text-align: left;
   }
 
-  .bulletin-card .upper-section .bulletin-category{
-    color: red;
-    float: left;
-    width: 50%;
+  .bulletin-card .upper-section span{
+   background-color: #005EAA;
+   color: white;
+   padding: 5px 10px;
+   text-transform: uppercase;
   }
 
-  .bulletin-card .upper-section .bulletin-date{
-    color: red;
-  display: inline-block;
-    width: 50%;
+  .bulletin-card .upper-section p{
+    color: #005EAA;
+    font-weight: bold;
   }
+
+  /* TEST */
+
+  .image-post img {
+    width: 100%;
+    height: 400px;
+}
+
+.container {
+    margin: 25px auto
+}
+
+  .image-post {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+.image-post .overlay {
+    position: absolute;
+    bottom: 0;
+    padding-left: 40px;
+    padding-top: 30%;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    z-index: 5;
+    height: 100%;
+}
+
+.image-post .overlay h3{
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  /* top: 30px; */
+}
+
+.image-post .overlay a{
+  font-size: 15px;
+  background: #E73E2E;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  /* top: 30px; */
+}
+
+.image-post .overlay::before {
+    content: "";
+    background: linear-gradient(90deg, #245EA5 0%, rgba(22, 57, 101, 0.609375) 43.13%, rgba(0, 0, 0, 0) 93.04%);;
+    height: 150%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+    z-index: -2;
+    /* opacity: 0.5; */
+    transition: all 0.3s ease-out
+}
+
+.image-post:hover .overlay {
+    color: white;
+    background: rgb(0, 94, 170,0.5);
+    height: 100%;
+}
+
+.container .image-post:hover .overlay .amount,
+.container .image-post:hover .overlay .h4,
+.container .image-posthover .overlay .textmuted,
+.container .image-post:hover .overlay .fa-star,
+.container .image-post:hover .overlay .fa-star-half-alt,
+.container .image-post:hover .overlay .review {
+    color: black;
+}
+
+.image-post:hover .overlay::before {
+    bottom: 0px;
+}
+
+.amount {
+    font-size: 15px;
+}
+
+.textmuted {
+    color: #f8f8f8;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.fa-star,
+.fa-star-half-alt {
+    color: white;
+    font-size: 10px;
+    margin: 0 1px;
+}
+
+.review {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+
 
 
 
